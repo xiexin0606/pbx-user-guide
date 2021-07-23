@@ -109,7 +109,7 @@ Deploying PortSIP PBX in a Linux environment requires planning and knowledge of 
 + CentOS 7.9 (64-bit)
 + Debian 10.x (64-bit)
 +  Ubuntu 18.04 or 20.04 (64-bit)
-+  Docker
++  Docker 20.10 or higher
 + IPv4/IPv6 
 + Systemd
 + IP tables 
@@ -407,6 +407,21 @@ Please perform below commands to upgrade.
 >
 > + The **IP_ADDRESS** is the IP address of your PBX server. In this case it is 66.175.222.20, you will need to change it by yourself, if your server is on public internet network, this IP should be the public IP.
 > + The **POSTGRES_PASSWORD** is used to specify the PortSIP DB password. In this case we will use 123456, you can change it by yourself. 
+
+
+
+> **The OS required:**
+>
+> - CentOS: 7.9
+> - Ubuntu: 18.04, 20.04
+> - Debian: 10.x
+> - Only supports 64bit OS
+>
+> 
+>
+> #### Important
+>
+> From v12.6.1, the PortSIP PBX requires running with the above Linux OS versions. If there already installed the PortSIP PBX which less than v12.6.1, and wish to upgrade to v12.6.1 or a later version, must upgrade the Linux OS to the above version before upgrade the PortSIP PBX.
 
 
 
